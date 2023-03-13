@@ -1,0 +1,83 @@
+/* Center the content vertically */
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5aa1ee;
+  }
+  
+  /* Style the container */
+  .container {
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+  #error {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  #answer {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  @media screen and (max-width: 576px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    input[type="text"] {
+      font-size: 1.2rem;
+    }
+    
+    button[type="submit"] {
+      font-size: 1.2rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
